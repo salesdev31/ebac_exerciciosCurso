@@ -1,0 +1,301 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+
+*/
+
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    height: inherit;
+}
+
+body > header  {
+    background-color: #181C14;
+    color: #ECDFCC;
+    height: 80px;
+  
+}
+
+/**/
+
+.first-section {
+    background-color: #697565;
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+header a {
+    font-size: 18px;
+    color: #e1e1e1;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+header a:focus,
+header a:hover {
+  color: #fff;
+}
+
+header a:focus:after,
+header a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+header a:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+.titulo_da_section {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-family: sans-serif;
+    position: relative;
+    letter-spacing: 3px;
+}
+
+.titulo_da_section::before {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    top: -5px;
+    background-color: rgb(37, 223, 0);
+}
+
+.containerSection {
+    width: 1366px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+article {
+    margin-bottom: 150px;
+}
+
+article a {
+    color: #ECDFCC;
+    padding: 20px 60px;
+    background-color: #181C14;
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: sans-serif;
+}
+
+article a:hover {
+    background-color: #0b0d0a;
+    transition: .5s;
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.articles article {
+    width: 30%;
+}
+
+.articles img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.472);
+}
+
+time {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(37, 223, 0);
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    color: #ECDFCC;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+article p {
+    text-indent: 50px;
+    padding-top: 15px;
+    line-height: 1.2;
+    font-family: sans-serif;
+    font-weight: 500;
+    background-color: #ecdfcc28;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.line {
+    display: block;
+    height: 5px;
+    display: flex;
+    align-items: center;
+    border-top: 2px solid rgb(38, 36, 36);
+    border-bottom: 2px solid rgb(38, 36, 36);
+}
+
+
+
+/*segunda section*/
+
+
+.second-section {
+    background-color: #ECDFCC;
+}
+
+.second-section p {
+    background-color: #1d1c193a;
+}
+
+.second-section time {
+  color:  rgb(3, 55, 197);
+  font-weight: bold;
+}
+
+.second-section h3 {
+    color: #181C14;
+}
+
+
+.detalhe-economia::before {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    top: -5px;
+    background-color: rgb(3, 55, 197);
+}
+
+
+
+/*terceira section*/
+
+.thirt-section {
+    background-color: #181C14;
+}
+
+.thirt-section h2 {
+    color: #e1e1e1;
+}
+
+.thirt-section a {
+    background-color: #e1e1e1;
+    color: #181C14;
+    font-weight: bold;
+}
+
+.thirt-section time {
+    color: rgb(243, 71, 3);
+    font-weight: bold;
+}
+
+.detalhe-game::before {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    top: -5px;
+    background-color: rgb(243, 71, 3);
+}
+
+
+/*quarta section */
+
+.four-section {
+    background-color: #e1e1e1;
+}
+
+.four-section h2 {
+    color: #404036;
+}
+
+.four-section h3 {
+    color: #404036;
+}
+
+.four-section p {
+    background-color: #0b0d0a3e;
+}
+
+.four-section a {
+    background-color: #e49c00;
+    color: #181C14;
+    font-weight: bold;
+}
+
+.four-section time {
+    color: #a20808;
+    font-weight: bold;
+}
+
+.detalhe-game::before {
+    content: " ";
+    position: absolute;
+    height: 5px;
+    width: 35px;
+    top: -5px;
+    background-color: #a20808;
+}
+
+
+footer {
+    display: flex;
+    height: 100px;box-shadow: -2px -2px 10px rgba(0, 0, 0, 0.587);
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+}
+
+footer span {
+
+}
